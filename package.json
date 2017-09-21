@@ -3,6 +3,17 @@
   "version": "1.0.0",
   "description": "Personal goal counters",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wojciechwasik/counters.git"
+  },
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "redux": "^3.7.2"
+  },
   "devDependencies": {
     "babel-core": "^6.23.0",
     "babel-cli": "^6.23.0",
