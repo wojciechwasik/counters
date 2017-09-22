@@ -12,6 +12,8 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 require('./index.css');
 
+require('./ShoppingList.jsx');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -129,4 +131,4 @@ var Game = function (_React$Component3) {
 
 // ========================================
 
-_reactDom2.default.render(_react2.default.createElement(Game, null), document.getElementById('root'));
+_reactDom2.default.render(_react2.default.createElement(ShoppingList, null), document.getElementById('root'));

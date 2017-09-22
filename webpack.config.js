@@ -15,6 +15,12 @@ module.exports = {
                 options: { presets: ['es2015', 'stage-0'] }
             },
             {
+                test: /\.jsx$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader',
+                options: { presets: ['es2015', 'react', 'stage-0'] }
+            },
+            {
                 test: /\.css$/,
                 exclude: /node_modules/,
                 loader: 'style-loader!css-loader'
