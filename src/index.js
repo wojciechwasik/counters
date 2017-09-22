@@ -12,7 +12,9 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 require('./index.css');
 
-require('./ShoppingList.jsx');
+var _ShoppingList = require('./ShoppingList.jsx');
+
+var _ShoppingList2 = _interopRequireDefault(_ShoppingList);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -131,4 +133,4 @@ var Game = function (_React$Component3) {
 
 // ========================================
 
-_reactDom2.default.render(_react2.default.createElement(ShoppingList, null), document.getElementById('root'));
+_reactDom2.default.render(_react2.default.createElement(_ShoppingList2.default, null), document.getElementById('root'));

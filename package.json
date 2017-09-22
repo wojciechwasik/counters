@@ -8,7 +8,8 @@
     "url": "git+https://github.com/wojciechwasik/counters.git"
   },
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "dev": "webpack-dev-server --content-base dist"
   },
   "dependencies": {
     "react": "^15.6.1",
@@ -27,6 +28,7 @@
     "babel-preset-react": "^6.23.0",
     "babel-preset-stage-0": "^6.23.0",
     "css-loader": "^0.28.7",
-    "style-loader": "^0.18.2"
+    "style-loader": "^0.18.2",
+    "webpack-dev-server": "^2.8.2"
   }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import './ShoppingList.jsx';
+import ShoppingList from './ShoppingList.jsx';
 
 class Square extends React.Component {
   render() {
