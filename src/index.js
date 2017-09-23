@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
 
-import { clickBoard, clearBoard } from './actions.es6';
-import { updateBoard } from './reducers.es6';
+import { clickBoard, clearBoard } from './actions';
+import { updateBoard } from './reducers';
 
 import './index.css';
 

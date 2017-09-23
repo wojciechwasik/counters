@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-    entry: './src/index.es6',
+    entry: './src/index.js',
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, './dist')
@@ -9,16 +9,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.es6$/,
-                exclude: /node_modules/,
-                loader: 'babel-loader',
-                options: {
-                  plugins: ['transform-runtime'],
-                  presets: ['es2015', 'react', 'stage-0']
-                }
-            },
-            {
-                test: /\.jsx$/,
+                test: /\.jsx?$/,
                 exclude: /node_modules/,
                 loader: 'babel-loader',
                 options: {

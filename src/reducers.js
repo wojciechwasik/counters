@@ -1,4 +1,4 @@
-import { CLICK_BOARD, CLEAR_BOARD } from './actions.es6';
+import { CLICK_BOARD, CLEAR_BOARD } from './actions';
 
 function calculateWinner(squares) {
   const lines = [
