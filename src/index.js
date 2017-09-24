@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createStore } from 'redux';
+import { applyMiddleware, createStore } from 'redux';
 import { Provider } from 'react-redux';
+import logger from 'redux-logger';
 
 import { updateBoard } from './reducers';
 import BoardContainer from './Board';
+import RedditFormContainer from './RedditForm';
 
 import './index.css';
 
-const store = createStore(updateBoard);
+const store = createStore(updateBoard, applyMiddleware(logger));
 
 class Game extends React.Component {
   render() {
@@ -30,7 +32,10 @@ class Game extends React.Component {
 
 ReactDOM.render(
   <Provider store={store}>
-    <Game />
+    <div>
+      <Game />
+      <RedditFormContainer formId="reddit" />
+    </div>
   </Provider>,
   document.getElementById('root')
 );
